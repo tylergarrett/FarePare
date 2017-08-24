@@ -2,6 +2,24 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>uber</string>
+        <string>uberauth</string>
+    </array>
+    <key>UberClientID</key>
+    <string>BHC3C1YnU_ed6s2JokPqZIFbnAE6eJ2U</string>
+        <key>UberDisplayName</key>
+        <string>FarePare</string>
+            <key>UberCallbackURIs</key>
+            <array>
+                <dict>
+                    <key>UberCallbackURIType</key>
+                    <string>General</string>
+                    <key>URIString</key>
+                    <string>http://localhost/</string>
+                    </dict>
+                </array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
