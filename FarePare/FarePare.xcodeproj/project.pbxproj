@@ -8,21 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		2F933FA11F4E56A500B84BE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F933FA01F4E56A500B84BE5 /* AppDelegate.swift */; };
-		2F933FA31F4E56A500B84BE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F933FA21F4E56A500B84BE5 /* ViewController.swift */; };
+		2F933FA31F4E56A500B84BE5 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F933FA21F4E56A500B84BE5 /* AddressViewController.swift */; };
 		2F933FA61F4E56A500B84BE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F933FA41F4E56A500B84BE5 /* Main.storyboard */; };
 		2F933FA81F4E56A500B84BE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F933FA71F4E56A500B84BE5 /* Assets.xcassets */; };
 		2F933FAB1F4E56A500B84BE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F933FA91F4E56A500B84BE5 /* LaunchScreen.storyboard */; };
+		2F933FB51F4E630900B84BE5 /* CompareFareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F933FB41F4E630800B84BE5 /* CompareFareViewController.swift */; };
 		4105188917BE1EE63B05FB2A /* Pods_FarePare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED11B6E4979EA2B1D0A4E07B /* Pods_FarePare.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2F933F9D1F4E56A500B84BE5 /* FarePare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FarePare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F933FA01F4E56A500B84BE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2F933FA21F4E56A500B84BE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F933FA21F4E56A500B84BE5 /* AddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
 		2F933FA51F4E56A500B84BE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F933FA71F4E56A500B84BE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F933FAA1F4E56A500B84BE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F933FAC1F4E56A500B84BE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F933FB41F4E630800B84BE5 /* CompareFareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompareFareViewController.swift; sourceTree = "<group>"; };
 		465169E9F2253701D886846A /* Pods-FarePare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FarePare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FarePare/Pods-FarePare.debug.xcconfig"; sourceTree = "<group>"; };
 		862CD8C2CB44F63C5A5C0A53 /* Pods-FarePare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FarePare.release.xcconfig"; path = "Pods/Target Support Files/Pods-FarePare/Pods-FarePare.release.xcconfig"; sourceTree = "<group>"; };
 		ED11B6E4979EA2B1D0A4E07B /* Pods_FarePare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FarePare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +72,8 @@
 			isa = PBXGroup;
 			children = (
 				2F933FA01F4E56A500B84BE5 /* AppDelegate.swift */,
-				2F933FA21F4E56A500B84BE5 /* ViewController.swift */,
+				2F933FA21F4E56A500B84BE5 /* AddressViewController.swift */,
+				2F933FB41F4E630800B84BE5 /* CompareFareViewController.swift */,
 				2F933FA41F4E56A500B84BE5 /* Main.storyboard */,
 				2F933FA71F4E56A500B84BE5 /* Assets.xcassets */,
 				2F933FA91F4E56A500B84BE5 /* LaunchScreen.storyboard */,
@@ -219,8 +222,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F933FA31F4E56A500B84BE5 /* ViewController.swift in Sources */,
+				2F933FA31F4E56A500B84BE5 /* AddressViewController.swift in Sources */,
 				2F933FA11F4E56A500B84BE5 /* AppDelegate.swift in Sources */,
+				2F933FB51F4E630900B84BE5 /* CompareFareViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +390,7 @@
 				2F933FB11F4E56A500B84BE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
