@@ -11,6 +11,8 @@ import UIKit
 
 class AddressViewController: UIViewController {
 
+    @IBOutlet weak var AddressTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,6 +36,14 @@ class AddressViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "FareSegue" //Defined in storyboard
+        {
+            let viewController = segue.destination as! CompareFareViewController
+            viewController.pickupLocation = self.AddressTextField.text! // set the textfield text here
+        }
+        
+    }
 
 }
 

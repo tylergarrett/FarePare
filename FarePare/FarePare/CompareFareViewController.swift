@@ -8,12 +8,18 @@
 
 import UIKit
 
+
+
 class CompareFareViewController: UIViewController {
+    
+    // Turn pickup location into CLLocation
+    var pickupLocation = "null"
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        print(pickupLocation)
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,4 +38,6 @@ class CompareFareViewController: UIViewController {
     }
     */
 
+
+    
 }

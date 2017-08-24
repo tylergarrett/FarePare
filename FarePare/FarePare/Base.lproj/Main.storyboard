@@ -40,13 +40,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Compare Prices!"/>
                                 <connections>
-                                    <segue destination="OQf-8e-gRa" kind="show" id="AGr-Yq-k0U"/>
+                                    <segue destination="OQf-8e-gRa" kind="show" identifier="FareSegue" id="AGr-Yq-k0U"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="G2Z-1J-8BS"/>
+                    <connections>
+                        <outlet property="AddressTextField" destination="UGk-Vz-Rop" id="FE9-NS-j7v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
