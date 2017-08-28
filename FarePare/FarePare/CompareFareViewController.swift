@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 
 
@@ -19,6 +20,20 @@ class CompareFareViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let geoCoder = CLGeocoder()
+        geoCoder.geocodeAddressString(pickupLocation) { (placemarks, error) in
+            guard
+                let placemarks = placemarks,
+                let location = placemarks.first?.location
+                else {
+                    // handle no location found
+                    return
+            }
+            
+            // Use your location
+            print(location.coordinate.latitude)
+            print(location.coordinate.longitude)
+        }
         print(pickupLocation)
     }
 
@@ -26,7 +41,7 @@ class CompareFareViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+   
 
     /*
     // MARK: - Navigation
